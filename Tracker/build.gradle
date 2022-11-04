@@ -1,0 +1,49 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+gradlePlugin {
+    plugins {
+        simplePlugin {
+            id = 'com.lhq.tracker'
+            implementationClass = 'com.lhq.tracker.TrackerPlugin'
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+//    gradleApi()
+    compileOnly("org.ow2.asm:asm-commons:7.0")
+    compileOnly("org.ow2.asm:asm-util:7.0")
+    compileOnly("com.android.tools.build:gradle-api:7.0.0")
+}
+
+group = "com.lhq.tracker"
+version = "1.0"
+afterEvaluate {
+    publishing {
+//        publications {
+//            maven(MavenPublication) {
+//                groupId = 'com.lhq'
+//                artifactId = 'tracker'
+//                version = '1.0'
+//
+//                from components.java
+//            }
+//        }
+        repositories {
+            maven {
+//                name "lhq"
+                url "../repo"
+            }
+        }
+    }
+}

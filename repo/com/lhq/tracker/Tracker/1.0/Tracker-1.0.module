@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lhq.tracker",
+    "module": "Tracker",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "Tracker-1.0.jar",
+          "url": "Tracker-1.0.jar",
+          "size": 14355,
+          "sha512": "516a1d571acd0d2316e3c8e13a13f0471f17d1ae388cae04ee5ea83951b7cd5126ae5771edf381a017e76741b508625ab3ac7907c01e2be9ed9e231e98f91bcb",
+          "sha256": "89f1a9c46b528f2ebda1ccf64e482196c1c348e64c3543a09474614d59c174c8",
+          "sha1": "f64090290496de3a416d39ace30c1ae9e77efcee",
+          "md5": "52c8357da3546bea7dd852396023f977"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "Tracker-1.0.jar",
+          "url": "Tracker-1.0.jar",
+          "size": 14355,
+          "sha512": "516a1d571acd0d2316e3c8e13a13f0471f17d1ae388cae04ee5ea83951b7cd5126ae5771edf381a017e76741b508625ab3ac7907c01e2be9ed9e231e98f91bcb",
+          "sha256": "89f1a9c46b528f2ebda1ccf64e482196c1c348e64c3543a09474614d59c174c8",
+          "sha1": "f64090290496de3a416d39ace30c1ae9e77efcee",
+          "md5": "52c8357da3546bea7dd852396023f977"
+        }
+      ]
+    }
+  ]
+}
